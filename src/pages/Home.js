@@ -44,7 +44,7 @@ function Home() {
     await authRepository.signout();
     setCurrentUser(null);
   };
-  if (currentUser == null) return <Navigate to="/signin" />;
+  if (currentUser == null) return <Navigate to="/snsapp/signin" />;
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-gradient-to-r from-slate-500 to-slate-800 p-4">
