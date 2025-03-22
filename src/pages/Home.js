@@ -6,6 +6,7 @@ import { postRepository } from "../repositories/post";
 import { Post } from "../components/Post";
 import { Pagination } from "../components/Pagination";
 import { authRepository } from "../repositories/auth";
+const APP_NAME = "snsapp"; // これが、リポジトリ名
 const limit=5;
 function Home() {
   const [content, setContent] = useState("");
@@ -44,7 +45,7 @@ function Home() {
     await authRepository.signout();
     setCurrentUser(null);
   };
-  if (currentUser == null) return <Navigate to="/snsapp/signin" />;
+  if (currentUser == null) return <Navigate to={APP_NAME+ '/signin'}/>;
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-gradient-to-r from-slate-500 to-slate-800 p-4">
