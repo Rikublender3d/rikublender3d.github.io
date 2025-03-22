@@ -2,7 +2,6 @@ import {useContext, useState} from 'react';
 import {authRepository} from '../repositories/auth';
 import {Navigate} from 'react-router-dom';
 import { SessionContext } from '../SessionProvider';
-const APP_NAME = "snsapp"; // これが、リポジトリ名
 function Signup() {
   const [name,setName]=useState('');
   const [email,setEmail]=useState('');
@@ -12,7 +11,7 @@ function Signup() {
     const user = await authRepository.signup(name,email,password);
     setCurrentUser(user);
   };
-  if(currentUser != null)return <Navigate to={APP_NAME +"/"}/>;
+  if(currentUser != null)return <Navigate to="/" />;
 
     return (
       <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
