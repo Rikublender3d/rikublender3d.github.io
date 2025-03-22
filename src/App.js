@@ -1,10 +1,10 @@
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import {Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 function App() {
   return (
-<BrowserRouter  basename={process.env.PUBLIC_URL}>
+<HashRouter  basename={process.env.PUBLIC_URL}>
     <div className="App">
         <div>
       <Routes>
@@ -14,7 +14,7 @@ function App() {
       </Routes>
     </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
