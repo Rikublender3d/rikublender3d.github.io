@@ -2,7 +2,7 @@
   "name": "sns-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Rikublender3d.github.io/snsapp",
+  "homepage": "https://Rikublender3d.github.io",
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
     "@testing-library/dom": "^10.4.0",
