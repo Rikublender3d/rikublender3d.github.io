@@ -4,7 +4,7 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 function App() {
   return (
-<BrowserRouter>
+<BrowserRouter  basename={process.env.PUBLIC_URL}>
     <div className="App">
         <div>
       <Routes>
