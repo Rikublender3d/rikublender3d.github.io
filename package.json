@@ -14,7 +14,7 @@
     "react-router-dom": "^7.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
-    "homepage": "https://Rikublender3d.github.io/snsapp"
+    "homepage": "https://Rikublender3d.github.io/snsapp/"
   },
   "scripts": {
     "predeploy": "npm run build",
