@@ -4,7 +4,7 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 function App() {
   return (
-<HashRouter  basename={process.env.PUBLIC_URL}>
+<HashRouter  basename="/snsapp">
     <div className="App">
         <div>
       <Routes>
