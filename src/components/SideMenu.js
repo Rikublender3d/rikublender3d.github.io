@@ -9,7 +9,7 @@ export function SideMenu() {
       <p>
         <strong>Name:</strong> {currentUser.userName}
       </p>
-      <p className="bg-black">
+      <p className="bg-white">
         <strong className='bg-white p-1'>Email:</strong> {currentUser.email}
       </p>
     </div>

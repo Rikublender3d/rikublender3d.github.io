@@ -54,7 +54,7 @@ function Home() {
         </div>
       </header>
       <div className="container mx-auto mt-6 p-4">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="md:grid grid-cols-3 gap-4">
           <div className="col-span-2">
             <div className="bg-white p-4 rounded-lg shadow-md">
               <textarea
@@ -77,7 +77,9 @@ function Home() {
             </div>
             <Pagination onPrev={page> 1 ? moveToPrev: null} onNext={posts.length > limit ? moveToNext:null}/>
           </div>
-          <SideMenu />
+          <div className="mt-4 md:mt-0"> 
+          <SideMenu/>
+          </div>
         </div>
       </div>
     </div>
