@@ -68,6 +68,7 @@ function Home() {
               disabled={content === ''}
               className="bg-[#708ce0] text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed">
                 Post
+                
               </button>
             </div>
             <div className="mt-4">
@@ -75,7 +76,7 @@ function Home() {
                 <Post key={post.id} post={post} onDelete={deletePost}/>
               ))}
             </div>
-            <Pagination onPrev={page> 1 ? moveToPrev: null} onNext={posts.length > limit ? moveToNext:null}/>
+            <Pagination onPrev={page> 1 ? moveToPrev: null} onNext={posts.length >= limit ? moveToNext:null}/>
           </div>
           <div className="mt-4 md:mt-0"> 
           <SideMenu/>
